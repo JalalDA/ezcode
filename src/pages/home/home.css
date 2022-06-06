@@ -1,0 +1,49 @@
+.homeleft{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 200px 130px;
+    row-gap: 20px;
+}
+
+.daftarSekarang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: linear-gradient(271.98deg, #FF0000 0%, #FF9900 100%);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 11px 53px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.homeright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.flayer{
+    width: 280px;
+    height: 404px;
+    background: #C4C4C4;
+    border-radius: 0px 30px;
+    position: absolute;
+    top: 170px;
+    right: 350px;
+    z-index: 3;
+}
+.blayer{
+    width: 280px;
+    height: 404px;
+    background: #E1E1E1;
+    border-radius: 0px 30px;
+    position: absolute;
+    right: 130px;
+    top: 120px;
+    z-index: 2;
+}

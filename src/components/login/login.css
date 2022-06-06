@@ -1,0 +1,45 @@
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 66px 75px;
+    row-gap: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 75%;
+}
+.inputForm{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.containerForm{
+    padding: 81px 128px;
+    width: 50%;
+}
+.formContainer > input{
+    border-style: none;
+    border-bottom: 1px solid #FF1300;
+    width: 100%;
+}
+.buttonNih{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+}
+.daftarRegister{
+    border-style: none;
+    width: 100%;
+}
+.masukRegister{
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}

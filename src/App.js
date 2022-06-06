@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/header/Header";
+// import Login from "./components/login/Login";
+// import Register from "./components/register/Register";
+import Home from "./pages/home/Home";
+import { useState } from "react";
+import UserContext from "./UserContext";
 
 function App() {
+  const [showRegist, setShowRegist] = useState('dontshow')
+  const [showLogin, setShowLogin] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserContext.Provider value={{showRegist, setShowRegist, setShowLogin, showLogin}}>
+        <Header/>
+        <Home/>
+      </UserContext.Provider>
     </div>
   );
 }
