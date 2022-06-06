@@ -4,15 +4,15 @@ import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import { useState } from "react";
 import UserContext from "./UserContext";
+import Profile from "./pages/profile/Profile";
 
 function App() {
-  const [showRegist, setShowRegist] = useState('dontshow')
-  const [showLogin, setShowLogin] = useState(false)
+  const [show, setShow] = useState(false)
   return (
     <div className="App">
-      <UserContext.Provider value={{showRegist, setShowRegist, setShowLogin, showLogin}}>
+      <UserContext.Provider value={{show, setShow}}>
         <Header/>
-        <Home/>
+        <Profile/>
       </UserContext.Provider>
     </div>
   );

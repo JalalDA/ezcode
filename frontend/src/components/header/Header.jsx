@@ -3,8 +3,7 @@ import UserContext from '../../UserContext'
 import './header.css'
 
 const Header = () => {
-    const {setShowRegist} = useContext(UserContext)
-    const {setShowLogin} = useContext(UserContext)
+    const {setShow} = useContext(UserContext)
     
   return (
     <>
@@ -20,13 +19,10 @@ const Header = () => {
             </div>
             <div className="auth">
                 <div className="masuk" onClick={()=>{
-                    console.log(setShowLogin);
-                    setShowLogin(true)
-                    setShowRegist(false)
+                    setShow('masuk')
                 }}>Masuk</div>
                 <div className="daftar" onClick={()=>{
-                    setShowRegist('')
-                    setShowLogin(false)
+                    setShow('daftar')
                 }}>Daftar</div>
             </div>
         </div>
