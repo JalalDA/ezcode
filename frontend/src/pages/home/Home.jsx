@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Header from '../../components/header/Header'
 import Login from '../../components/login/Login'
 import Register from '../../components/register/Register'
 import UserContext from '../../UserContext'
@@ -10,6 +11,7 @@ const Home = () => {
     
 return (
     <>
+    <Header/>
     <div className="row homeContainer">
         {!show ? <div className="col-lg-6 homeleft">
             <h3>WHO EVER YOU ARE !!!</h3>
